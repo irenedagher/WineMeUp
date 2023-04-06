@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 //allright
 //yes yes
-//try try
+//try
 
 public class MainActivity extends AppCompatActivity {
 
