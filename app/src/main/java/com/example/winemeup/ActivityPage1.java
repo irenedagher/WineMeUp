@@ -12,3 +12,4 @@ public class ActivityPage1 extends AppCompatActivity {
         setContentView(R.layout.activity_page1);
     }
 }
+//useless comment
