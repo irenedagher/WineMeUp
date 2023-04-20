@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "424079601627",
+    "firebase_url": "https://wine-me-up-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "wine-me-up",
+    "storage_bucket": "wine-me-up.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424079601627:android:025c4af7e1a0d512a341fe",
+        "android_client_info": {
+          "package_name": "com.example.winemeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424079601627-o91bg8k0igtanbe8l6pco7mab3b4jmje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq6H6rgUGGhZL7GfXkhlVDLP0VVp5EBIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424079601627-o91bg8k0igtanbe8l6pco7mab3b4jmje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
