@@ -20,8 +20,7 @@
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/button_signup"
-        app:layout_constraintVertical_bias="0.01"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <TextView
         android:id="@+id/textView15"
@@ -62,8 +61,7 @@
         app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.308"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <TextView
         android:id="@+id/textView4"
@@ -77,8 +75,7 @@
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.616"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.616" />
 
     <Button
         android:id="@+id/button_signup"
@@ -91,8 +88,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button_signin"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.235"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.235" />
 
     <TextView
         android:id="@+id/textView5"
@@ -106,8 +102,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_signin"
-        app:layout_constraintVertical_bias="0.015"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
