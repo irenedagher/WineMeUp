@@ -20,14 +20,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button_signup = (Button) findViewById(R.id.button_signup);
+        Button button_signin=(Button) findViewById(R.id.button_signin);
         button_signup.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 openSignUppage();
+            }
+        });
+
+        button_sign.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                openSignInpage();
             }
         });
     }
     public void openSignUppage() {
         Intent intent=new Intent(this,ActivitySignUp.class);
+        startActivity(intent);
+    }
+    public void openSignInpage() {
+        Intent intent=new Intent(this,ActivitySignIn.class);
         startActivity(intent);
     }
 }
