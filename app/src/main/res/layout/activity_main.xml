@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="up!"
         android:textColor="#782222"
-        android:textSize="40sp"
+        android:textSize="40dp"
         tools:layout_editor_absoluteX="231dp"
         tools:layout_editor_absoluteY="266dp"
         tools:ignore="MissingConstraints" />

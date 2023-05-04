@@ -5,7 +5,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private bu button_signup;
+
 
 
 

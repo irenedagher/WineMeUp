@@ -14,6 +14,7 @@
         android:layout_height="146dp"
         android:gravity="center"
         android:text="Already a wine-drinker? SIGN IN"
+        android:textStyle="bold"
         android:textColor="#782222"
         android:textSize="25dp"
         android:textStyle="italic"
