@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WineMeUp</string>
+    <string name="sign_in">Sign in</string>
+    <string name="wine">Wine</string>
+    <string name="me">me</string>
+    <string name="up">up!</string>
+    <string name="sign_up">Sign up</string>
+    <string name="use_without_creating_account">Use without creating account</string>
 </resources>
