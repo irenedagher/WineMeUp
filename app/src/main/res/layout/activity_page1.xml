@@ -58,14 +58,14 @@
     <TextView
         android:layout_width="259dp"
         android:layout_height="62dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="88dp"
         android:text="Bonjour User !"
         android:textColor="#782222"
         android:textSize="40dp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="119dp" />
+        tools:layout_editor_absoluteY="123dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -81,6 +81,20 @@
         tools:layout_editor_absoluteY="203dp" />
 
     <TextView
+        android:layout_width="221dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="172dp"
+        android:text="Découvrir les vins "
+        android:textColor="#782222"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:textWeight="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <TextView
+        android:id="@+id/textView12"
         android:layout_width="221dp"
         android:layout_height="43dp"
         android:layout_marginEnd="180dp"
@@ -112,5 +126,13 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="211dp"
         tools:layout_editor_absoluteY="335dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/_017145216_apero_entre_amis_bleu"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="221dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
