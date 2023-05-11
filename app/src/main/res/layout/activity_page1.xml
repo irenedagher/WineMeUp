@@ -8,6 +8,24 @@
     tools:context=".ActivityPage1">
 
     <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Autres utilisations "
+        android:textColor="#782222"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,7 +124,7 @@
         android:layout_height="43dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
-        android:text="Autres utilisations "
+        android:text="Découvrir les vins "
         android:textColor="#782222"
         android:textSize="20dp"
         android:textStyle="italic"
@@ -115,7 +133,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.644"
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -145,5 +163,56 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="131dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/_017145216_apero_entre_amis_bleu"
+        tools:layout_editor_absoluteX="52dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="189dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/button_border_red"
+        android:text="C'est l'apéro !  Pas de plats en particulier? Testez ces vins!
+"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="337dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_border_red"
+        android:text="AkinaTorche Répondre à des questions et avoir votre vin!"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="68dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/pngimg_com___question_mark_png99"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="452dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/box"
+        tools:ignore="MissingConstraints" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

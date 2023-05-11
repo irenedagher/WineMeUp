@@ -14,7 +14,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/button_border_red"
         android:text="@string/sign_in"
-        android:textColor="#782222"
+        android:textColor="#FDFDF6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.514"
@@ -99,10 +99,10 @@
         android:textColor="#808080"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_signin"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
