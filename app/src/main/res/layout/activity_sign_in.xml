@@ -12,14 +12,18 @@
         android:id="@+id/textView9"
         android:layout_width="205dp"
         android:layout_height="146dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Already a wine-drinker? SIGN IN"
         android:textStyle="bold"
         android:textColor="#782222"
         android:textSize="25dp"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="45dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
 
     <TextView
         android:id="@+id/textView10"
@@ -27,8 +31,12 @@
         android:layout_height="wrap_content"
         android:text="Email"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
 
     <TextView
         android:id="@+id/textView11"
@@ -36,8 +44,12 @@
         android:layout_height="wrap_content"
         android:text="Password"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="495dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -48,9 +60,12 @@
         android:gravity="center"
         android:inputType="textPersonName"
         android:text=" Wine Drinker "
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.39999998"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -60,9 +75,11 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="textPassword"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_signup"
@@ -70,55 +87,97 @@
         android:layout_height="51dp"
         android:background="@drawable/button_background"
         android:text="Log in with email"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/logowinemeup"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/logowinemeup_vector" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/logowinemeup"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/logowinemeup_vector" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/logowinemeup"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/logowinemeup_vector" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/logowinemeup"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/logowinemeup_vector" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/logowinemeup"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@drawable/logowinemeup_vector" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/logowinemeup"
-        tools:layout_editor_absoluteX="-11dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logowinemeup_vector" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
