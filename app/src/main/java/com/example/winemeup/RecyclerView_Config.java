@@ -30,6 +30,11 @@ public class RecyclerView_Config {
         private TextView mColour;
         private TextView mCountry;
         private TextView mDescription;
+        private TextView mNameDish;
+        private TextView mDomain;
+        private TextView mPrice;
+        private TextView mRegion;
+        private TextView mYear;
 
         private String key;
 
@@ -39,6 +44,12 @@ public class RecyclerView_Config {
             mColour = (TextView) itemView.findViewById(R.id.colour_txtView);
             mCountry = (TextView) itemView.findViewById(R.id.country_txtView);
             mDescription = (TextView) itemView.findViewById(R.id.description_txtView);
+            mNameDish = (TextView) itemView.findViewById(R.id.nameDish_txtView);
+            mDomain = (TextView) itemView.findViewById(R.id.domain_txtView);
+            mPrice = (TextView) itemView.findViewById(R.id.price_txtView);
+            mRegion = (TextView) itemView.findViewById(R.id.region_txtView);
+            mYear = (TextView) itemView.findViewById(R.id)
+            //Missing PART !
         }
         public void bind(Wine wine, String key){
             mColour.setText(wine.getColour());

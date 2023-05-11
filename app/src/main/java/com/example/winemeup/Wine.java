@@ -5,22 +5,22 @@ public class Wine {
    private String colour;
    private String country;
    private String description;
-   private String imageDish;
+  // private String imageDish;
    private String nameDish;
    private String domain;
-   private String image;
+  // private String image;
    private int price;
    private String region;
    private int year;
 
-   public Wine(String colour, String country, String description, String nameDish, String imageDish, String domain, String image, int price, String region, int year) {
+   public Wine(String colour, String country, String description, String nameDish,/* String imageDish*/, String domain,/* String image*/, int price, String region, int year) {
       this.colour = colour;
       this.country = country;
       this.description = description;
-      this.imageDish = imageDish;
+      //this.imageDish = imageDish;
       this.nameDish = nameDish;
       this.domain = domain;
-      this.image = image;
+     // this.image = image;
       this.price = price;
       this.region = region;
       this.year = year;
