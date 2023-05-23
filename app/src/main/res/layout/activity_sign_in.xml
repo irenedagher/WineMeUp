@@ -15,7 +15,6 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Already a wine-drinker? SIGN IN"
-        android:textStyle="bold"
         android:textColor="#782222"
         android:textSize="25dp"
         android:textStyle="italic"
@@ -31,12 +30,12 @@
         android:layout_height="wrap_content"
         android:text="Email"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintBottom_toTopOf="@+id/PersonName"
+        app:layout_constraintEnd_toStartOf="@+id/PersonName"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView11"
@@ -44,15 +43,15 @@
         android:layout_height="wrap_content"
         android:text="Password"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintBottom_toTopOf="@+id/PersonPassword"
+        app:layout_constraintEnd_toStartOf="@+id/PersonPassword"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/PersonName"
         android:layout_width="235dp"
         android:layout_height="40dp"
         android:background="@drawable/button_border_red"
@@ -68,21 +67,22 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/PersonPassword"
         android:layout_width="235dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/button_border_red"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button_signup"
+        app:layout_constraintBottom_toTopOf="@+id/button_signin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/PersonName"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_signup"
+        android:id="@+id/button_signin"
         android:layout_width="184dp"
         android:layout_height="51dp"
         android:background="@drawable/button_background"
@@ -134,7 +134,7 @@
         android:id="@+id/imageView3"
         android:layout_width="68dp"
         android:layout_height="124dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/PersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:layout_constraintVertical_bias="0.00999999"

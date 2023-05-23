@@ -4,40 +4,42 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private bu button_signup;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button_signup = (Button) findViewById(R.id.button_signup);
-        Button button_signin = (Button) findViewById(R.id.button_signin);
-        button_signup.setOnClickListener(new View.OnClickListener() {
+        Button button_signup_ = (Button) findViewById(R.id.button_signup_);
+        Button button_signin_ = (Button) findViewById(R.id.button_signin_);
+
+
+        button_signup_.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openSignUppage();
+                openActivitySignUp();
             }
         });
-        button_signin.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                openSignInpage();
+
+        button_signin_.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivitySignIn();
+
             }
+
         });
     }
-    public void openSignUppage() {
-        Intent intent=new Intent(this,ActivitySignUp.class);
-        startActivity(intent);
-    }
-    public void openSignInpage() {
-        Intent intent=new Intent(this,WineListActivity.class);
-        startActivity(intent);
-    }
+
+public void openActivitySignIn(){
+    Intent intent=new Intent(this, ActivitySignIn.class);
+    startActivity(intent);
+}
+public void openActivitySignUp(){
+            Intent intent=new Intent(this, ActivitySignUp.class);
+            startActivity(intent);
+        }
 }

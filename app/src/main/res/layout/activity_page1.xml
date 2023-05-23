@@ -141,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="0dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -164,48 +164,50 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="20dp" />
 
+
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="131dp"
         android:layout_height="230dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/_017145216_apero_entre_amis_bleu"
-        tools:layout_editor_absoluteX="52dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="189dp"
         android:layout_height="115dp"
-        android:layout_marginStart="16dp"
         android:background="@drawable/button_border_red"
         android:text="C'est l'apéro !  Pas de plats en particulier? Testez ces vins!
 "
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="337dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="337dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="170dp"
         android:layout_height="112dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_border_red"
         android:text="AkinaTorche Répondre à des questions et avoir votre vin!"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="340dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
         tools:ignore="MissingConstraints" />
-
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="68dp"
         android:layout_height="63dp"
         app:srcCompat="@drawable/pngimg_com___question_mark_png99"
-        tools:layout_editor_absoluteX="282dp"
-        tools:layout_editor_absoluteY="452dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="464dp" />
 
     <TextView
         android:layout_width="50dp"

@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_signin"
+        android:id="@+id/button_signin_"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/button_signup"
+        app:layout_constraintTop_toBottomOf="@+id/button_signup_"
         app:layout_constraintVertical_bias="0.01" />
 
     <TextView
@@ -32,10 +32,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.224" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -44,10 +44,10 @@
         android:src="@drawable/logowinemeup_vector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <TextView
         android:id="@+id/textView3"
@@ -78,15 +78,15 @@
         app:layout_constraintVertical_bias="0.616" />
 
     <Button
-        android:id="@+id/button_signup"
+        android:id="@+id/button_signup_"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/button_background"
         android:text="@string/sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button_signin"
+        app:layout_constraintEnd_toEndOf="@+id/button_signin_"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_signin"
+        app:layout_constraintStart_toStartOf="@+id/button_signin_"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.235" />
 
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_signin"
+        app:layout_constraintTop_toBottomOf="@+id/button_signin_"
         app:layout_constraintVertical_bias="0.269" />
 
     <androidx.constraintlayout.widget.Guideline
