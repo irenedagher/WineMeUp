@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -55,7 +58,7 @@ import java.util.Objects;
 
 public class ActivitySignIn extends AppCompatActivity {
 
-
+    ImageView imageView,imageView3,imageView4,imageView6,imageView5,imageView7;
 
     private ActivitySignInBinding binding;
     private ProgressDialog progressDialog;
@@ -69,11 +72,26 @@ public class ActivitySignIn extends AppCompatActivity {
         binding= ActivitySignInBinding.inflate(getLayoutInflater());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(binding.getRoot());
+        imageView=findViewById(R.id.imageView);
+        imageView3=findViewById(R.id.imageView3);
+        imageView4=findViewById(R.id.imageView4);
+        imageView5=findViewById(R.id.imageView5);
+        imageView6=findViewById(R.id.imageView6);
+        imageView7=findViewById(R.id.imageView7);
 
         progressDialog= new ProgressDialog(this);
         progressDialog.setTitle("Please Wait");
         progressDialog.setMessage("Signing in");
         progressDialog.setCanceledOnTouchOutside(false);
+
+        startFunction(imageView);
+        startFunction(imageView3);
+        startFunction(imageView4);
+        startFunction(imageView5);
+        startFunction(imageView6);
+        startFunction(imageView7);
+
+
 
         //if have account,signup
         firebaseAuth=FirebaseAuth.getInstance();
@@ -94,6 +112,18 @@ public class ActivitySignIn extends AppCompatActivity {
 
 
         });
+
+    }
+    public void startFunction(View view ){
+        Animation rotateImage= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate);
+        imageView4.startAnimation(rotateImage);
+        imageView5.startAnimation(rotateImage);
+        imageView6.startAnimation(rotateImage);
+        imageView7.startAnimation(rotateImage);
+        imageView.startAnimation(rotateImage);
+        imageView3.startAnimation(rotateImage);
+
+
 
     }
 

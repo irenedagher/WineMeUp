@@ -209,12 +209,5 @@
         tools:layout_editor_absoluteX="267dp"
         tools:layout_editor_absoluteY="464dp" />
 
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/box"
-        tools:ignore="MissingConstraints" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
