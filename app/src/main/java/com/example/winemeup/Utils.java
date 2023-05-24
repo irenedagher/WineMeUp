@@ -71,7 +71,7 @@ public class Utils {
 
     public static void search(final AppCompatActivity a, DatabaseReference db,
                               final ProgressBar pb,
-                              MyAdapter adapter, String searchTerm) {
+                              WineAdapter adapter, String searchTerm) {
         if(searchTerm != null && searchTerm.length()>0){
             char[] letters=searchTerm.toCharArray();
             String firstLetter = String.valueOf(letters[0]).toUpperCase();
@@ -81,7 +81,7 @@ public class Utils {
 
         Utils.showProgressBar(pb);
 
-        Query firebaseSearchQuery = db.child("Scientists").orderByChild("name").startAt(searchTerm)
+        Query firebaseSearchQuery = db.child("Wines").orderByChild("domain").startAt(searchTerm)
                 .endAt(searchTerm + "uf8ff");
 
         firebaseSearchQuery.addValueEventListener(new ValueEventListener() {
@@ -91,9 +91,8 @@ public class Utils {
                 if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         //Now get Scientist Objects and populate our arraylist.
-                        Scientist scientist = ds.getValue(Scientist.class);
-                        scientist.setKey(ds.getKey());
-                        DataCache.add(scientist);
+                        Wine wine = ds.getValue(Wine.class);
+                        DataCache.add(wine);
                     }
                     adapter.notifyDataSetChanged();
                 }else {
@@ -113,19 +112,18 @@ public class Utils {
 
     public static void select(final AppCompatActivity a, DatabaseReference db,
                               final ProgressBar pb,
-                              final RecyclerView rv,MyAdapter adapter) {
+                              final RecyclerView rv,WineAdapter adapter) {
         Utils.showProgressBar(pb);
 
-        db.child("Scientists").addValueEventListener(new ValueEventListener() {
+        db.child("Wines").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 DataCache.clear();
                 if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         //Now get Scientist Objects and populate our arraylist.
-                        Scientist scientist = ds.getValue(Scientist.class);
-                        scientist.setKey(ds.getKey());
-                        DataCache.add(scientist);
+                        Wine wine = ds.getValue(Wine.class);
+                        DataCache.add(wine);
                     }
 
                     adapter.notifyDataSetChanged();

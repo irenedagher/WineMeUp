@@ -48,7 +48,7 @@ public class RecyclerView_Config {
             mDomain = (TextView) itemView.findViewById(R.id.domain_txtView);
             mPrice = (TextView) itemView.findViewById(R.id.price_txtView);
             mRegion = (TextView) itemView.findViewById(R.id.region_txtView);
-            mYear = (TextView) itemView.findViewById(R.id)
+            mYear = (TextView) itemView.findViewById(R.id);
             //Missing PART !
         }
         public void bind(Wine wine, String key){
