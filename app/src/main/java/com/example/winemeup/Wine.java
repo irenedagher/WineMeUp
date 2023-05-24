@@ -1,19 +1,23 @@
 
 package com.example.winemeup;
 
-public class Wine {
+import com.google.firebase.database.Exclude;
+
+import java.io.Serializable;
+
+public class Wine implements  Serializable{
    private String colour;
    private String country;
    private String description;
-  // private String imageDish;
+   private String imageDish;
    private String nameDish;
    private String domain;
-  // private String image;
+   private String image;
    private int price;
    private String region;
    private int year;
 
-   public Wine(String colour, String country, String description, String nameDish,/* String imageDish*/, String domain,/* String image*/, int price, String region, int year) {
+   public Wine(String colour, String country, String description, String nameDish, String imageDish, String domain, String image, int price, String region, int year) {
       this.colour = colour;
       this.country = country;
       this.description = description;
@@ -27,6 +31,7 @@ public class Wine {
    }
 
    public Wine() {
+       //empty constructor needed
    }
 
    public String getColour() {
