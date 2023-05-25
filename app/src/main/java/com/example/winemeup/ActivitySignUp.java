@@ -68,11 +68,20 @@ public class ActivitySignUp extends AppCompatActivity {
         setContentView(binding.getRoot());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         firebaseAuth=FirebaseAuth.getInstance();
+
+
+
+
+
+
+
         binding.textView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 startActivity(new Intent(ActivitySignUp.this,ActivitySignIn.class));
+
+
 
             }
         });
@@ -88,9 +97,13 @@ public class ActivitySignUp extends AppCompatActivity {
             public void onClick(View view) {
                 validateData();
 
+
+
             }
         });
     }
+
+
 
     private void validateData() {
         //getting the data when the user writes it

@@ -1,213 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEFEF7"
-    tools:context=".ActivityPage1">
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
-        android:text="Autres utilisations "
-        android:textColor="#782222"
-        android:textSize="20dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="me"
-        android:textColor="#100F0F"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65999997"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="52dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="2dp"
-        android:text="Wine"
-        android:textColor="#782222"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="36dp"
-        android:layout_height="65dp"
-        android:src="@drawable/logowinemeup_vector"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:text="up!"
-        android:textColor="#782222"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="259dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Bonjour User !"
-        android:textColor="#782222"
-        android:textSize="40dp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="289dp"
-        android:layout_height="36dp"
-        android:background="@drawable/button_border_red"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=" Que mangez-vous ce soir ?"
-        android:textColor="#BEA39F9F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
-        android:text="Découvrir les vins "
-        android:textColor="#782222"
-        android:textSize="20dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.644"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="0dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="20dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="20dp" />
+     android:layout_width="match_parent">
 
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="131dp"
-        android:layout_height="230dp"
-        android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/_017145216_apero_entre_amis_bleu"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="189dp"
-        android:layout_height="115dp"
-        android:background="@drawable/button_border_red"
-        android:text="C'est l'apéro !  Pas de plats en particulier? Testez ces vins!
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEFEF7"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        tools:context=".ActivityPage1">
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="Other usage "
+            android:textColor="#782222"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintVertical_bias="0.003"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="33dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="35dp"
+            android:text="me"
+            android:textColor="#100F0F"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="140dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:text="Wine"
+            android:textColor="#782222"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.559"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="37dp"
+            android:layout_height="83dp"
+            android:layout_marginBottom="228dp"
+            android:src="@drawable/logowinemeup_vector"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="197dp"
+            android:layout_marginBottom="272dp"
+            android:text="up!"
+            android:textColor="#782222"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="204dp"
+            android:layout_height="228dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="593dp"
+            android:background="@drawable/box"
+            app:layout_constraintBottom_toTopOf="@+id/buttonC"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="186dp"
+            android:layout_height="231dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="673dp"
+            android:background="@drawable/box21"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="154dp"
+            android:layout_marginBottom="948dp"
+            android:text="Bonjour "
+            android:textColor="#782222"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/buttonC"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="154dp"
+            android:layout_marginBottom="948dp"
+            android:text=" User "
+            android:textColor="#782222"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/buttonC"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="273dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginBottom="922dp"
+            android:background="@drawable/button_border_red"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=" What are you having for dinner ?"
+            android:textColor="#BEA39F9F"
+            app:layout_constraintBottom_toTopOf="@+id/buttonC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="Discover the wine "
+            android:textColor="#782222"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintVertical_bias="0.349"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="0dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/buttonC"
+            app:layout_constraintGuide_end="56dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="88dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="381dp"
+            android:layout_marginBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.098"
+            app:srcCompat="@drawable/_017145216_apero_entre_amis_bleu"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="189dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="364dp"
+            android:background="@drawable/button_border_red"
+            android:text="Apéro time ! No particular dish? Test these wines!
 "
-        app:layout_constraintStart_toStartOf="@+id/imageView9"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="337dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="170dp"
-        android:layout_height="112dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/button_border_red"
-        android:text="AkinaTorche Répondre à des questions et avoir votre vin!"
-        app:layout_constraintBottom_toTopOf="@+id/imageView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="167dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="224dp"
+            android:layout_marginTop="364dp"
+            android:background="@drawable/button_border_red"
+            android:text="AkinaTorche Answernthe questions, get the perfect wine match for you"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="68dp"
-        android:layout_height="63dp"
-        app:srcCompat="@drawable/pngimg_com___question_mark_png99"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="464dp" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="68dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pngimg_com___question_mark_png99"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="164dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="216dp"
+            android:layout_marginTop="1188dp"
+            android:background="@drawable/button_border_red"
+            android:text="White wine
+"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="182dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="1180dp"
+            android:background="@drawable/button_border_red"
+            android:text="Organic wine
+"
+            app:layout_constraintEnd_toEndOf="@+id/imageView13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonC3"
+            android:layout_width="170dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="876dp"
+            android:background="@drawable/button_border_red"
+            android:text="Rosé wine
+"
+            app:layout_constraintBottom_toTopOf="@+id/imageView13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonC2"
+            android:layout_width="182dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="204dp"
+            android:layout_marginTop="884dp"
+            android:background="@drawable/button_border_red"
+            android:text="Red wine
+"
+            app:layout_constraintBottom_toTopOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="161dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="719dp"
+            android:layout_marginBottom="260dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonC"
+            app:layout_constraintStart_toStartOf="@+id/buttonC3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vinrose" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="174dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="716dp"
+            android:layout_marginBottom="289dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonB"
+            app:layout_constraintEnd_toEndOf="@+id/buttonC2"
+            app:layout_constraintStart_toStartOf="@+id/buttonC2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vinrouge" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="175dp"
+            android:layout_height="185dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="@+id/buttonC"
+            app:srcCompat="@drawable/vinbio" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="167dp"
+            android:layout_height="206dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonC"
+            app:srcCompat="@drawable/vinblanc" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </ScrollView >
+
+
