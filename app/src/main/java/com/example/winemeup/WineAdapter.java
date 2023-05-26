@@ -72,7 +72,7 @@ public class  WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         this.c = parent.getContext();
         View view = LayoutInflater.from(c).inflate(R.layout.wine_list_item, parent, false);
-        view.setBackgroundResource(mBackground);
+        //view.setBackgroundResource(mBackground);
         return new ViewHolder(view);
     }
 

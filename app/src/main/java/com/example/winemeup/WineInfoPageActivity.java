@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.winemeup.databinding.ActivityMainBinding;
 import com.google.firebase.storage.StorageReference;
 
 public class WineInfoPageActivity extends AppCompatActivity  implements
@@ -23,9 +22,6 @@ public class WineInfoPageActivity extends AppCompatActivity  implements
     public ProgressBar mProgressBar;
     private LinearLayoutManager layoutManager;
     WineAdapter adapter;
-    ActivityMainBinding binding;
-    StorageReference storageReference;
-    ProgressDialog progressDialog;
 
     private void initializeViews(){
         mProgressBar = findViewById(R.id.mProgressBarLoad);
@@ -34,8 +30,7 @@ public class WineInfoPageActivity extends AppCompatActivity  implements
         rv = findViewById(R.id.mRecyclerView);
         layoutManager = new LinearLayoutManager(this);
         rv.setLayoutManager(layoutManager);
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(rv.getContext(),
-                layoutManager.getOrientation());
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(rv.getContext(),layoutManager.getOrientation());
         rv.addItemDecoration(dividerItemDecoration);
         adapter=new WineAdapter(Utils.DataCache);
         rv.setAdapter(adapter);
@@ -56,7 +51,7 @@ public class WineInfoPageActivity extends AppCompatActivity  implements
         SearchView searchView = (SearchView) searchItem.getActionView();
         searchView.setOnQueryTextListener(this);
         searchView.setIconified(true);
-        searchView.setQueryHint("Search");
+        searchView.setQueryHint("Search Here");
         return true;
     }
 
@@ -86,8 +81,6 @@ public class WineInfoPageActivity extends AppCompatActivity  implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wines);
-        rv.setHasFixedSize(true); //I added that might create a layout bug.
-        setContentView(binding.getRoot());
 
         initializeViews();
         bindData();

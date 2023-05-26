@@ -14,9 +14,6 @@
         android:theme="@style/Theme.WineMeUp"
         tools:targetApi="31" >
         <activity
-            android:name=".WineListActivity"
-            android:exported="false" />
-        <activity
             android:name=".ActivityPage1"
             android:exported="false" />
         <activity
@@ -25,7 +22,7 @@
         <activity
             android:name=".ActivitySignUp"
             android:exported="false" />
-        <activity android:name=".ActivityPageWineInfo"
+        <activity android:name=".WineInfoPageActivity"
             android:exported="false"/>
         <activity
             android:name=".MainActivity"
