@@ -1,4 +1,4 @@
-package com.example.winemeup;
+/*package com.example.winemeup;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,7 +18,7 @@ public class WineListActivity extends AppCompatActivity {
         new FirebaseDatabaseHelper().readWines(new FirebaseDatabaseHelper.DataStatus() {
             @Override
             public void DataIsLoaded(List<Wine> wines, List<String> keys) {
-               /* findViewById(R.id.loading_wines_pb).setVisibility(View.GONE);*/
+                //findViewById(R.id.loading_wines_pb).setVisibility(View.GONE);
                 new RecyclerView_Config().setConfig(mRecyclerView,WineListActivity.this,
                         wines, keys);
             }
@@ -39,4 +39,4 @@ public class WineListActivity extends AppCompatActivity {
             }
         });
     }
-}
+}*/

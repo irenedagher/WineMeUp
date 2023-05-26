@@ -1,4 +1,4 @@
-package com.example.winemeup;
+/*package com.example.winemeup;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import java.util.List;
 import org.w3c.dom.Text;
 
 import java.net.ContentHandler;
-
+//ALL VERSION OF FILES NOT USED ANYMORE (I hope)
 public class RecyclerView_Config {
     private Context mContext;
     private WinesAdapter mWinesAdapter;
@@ -83,4 +83,4 @@ public class RecyclerView_Config {
             return mWineList.size();
         }
     }
-}
+}*/

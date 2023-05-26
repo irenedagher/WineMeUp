@@ -1,4 +1,4 @@
-package com.example.winemeup;
+/*package com.example.winemeup;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.SearchView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -15,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
+//ALL VERSION OF FILES NOT USED ANYMORE (I hope)
 public class ActivityPageWineInfo extends AppCompatActivity {
     private static final String TAG = "ViewWine";
 
@@ -83,4 +88,4 @@ public class ActivityPageWineInfo extends AppCompatActivity {
         }
     }
 
-}
+}*/

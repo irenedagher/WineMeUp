@@ -21,10 +21,10 @@ public class Wine implements  Serializable{
       this.colour = colour;
       this.country = country;
       this.description = description;
-      //this.imageDish = imageDish;
+      this.imageDish = imageDish;
       this.nameDish = nameDish;
       this.domain = domain;
-     // this.image = image;
+      this.image = image;
       this.price = price;
       this.region = region;
       this.year = year;

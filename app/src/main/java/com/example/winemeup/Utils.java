@@ -48,7 +48,7 @@ public class Utils {
     /**
      * This method will allow us receive a serialized scientist, deserialize it and return it,.
      */
-    public  static Wine receiveScientist(Intent intent, Context c){
+    public  static Wine receiveWine(Intent intent, Context c){
         try {
             return (Wine) intent.getSerializableExtra("WINE_KEY");
         }catch (Exception e){

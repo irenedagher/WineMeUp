@@ -22,7 +22,9 @@ import java.util.Random;
 
 import static com.example.winemeup.Utils.searchString;
 
-public class WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
+import com.google.firebase.storage.FirebaseStorage;
+
+public class  WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
 
     private Context c;
     private int mBackground;
@@ -75,50 +77,47 @@ public class WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        //get current scientist
+        //get current wine
         final Wine s = wines.get(position);
 
         //bind data to widgets
-        holder.nameTxt.setText(s.getName());
-        holder.mDescriptionTxt.setText(s.getDescription());
-        holder.galaxyTxt.setText(s.getGalaxy());
-        holder.mIcon.setInitials(true);
-        holder.mIcon.setInitialsNumber(2);
-        holder.mIcon.setLetterSize(25);
-        holder.mIcon.setShapeColor(mMaterialColors[new Random().nextInt(
-                mMaterialColors.length)]);
-        holder.mIcon.setLetter(s.getName());
+        holder.mDish.setText(s.getNameDish());
+        holder.mdomainTxt.setText(s.getDomain());
+        holder.mPrice.setText(s.getPrice());
+        holder.mImageWine.setImageDrawable();
+        String imageUrl = "gs://wine-me-up.appspot.com/"+s.getImage()+".jpg";
+
 
         if(position % 2 == 0){
             holder.itemView.setBackgroundColor(Color.parseColor("#efefef"));
         }
 
         //get name and galaxy
-        String name = s.getName().toLowerCase(Locale.getDefault());
+        String domain = s.getDomain().toLowerCase(Locale.getDefault());
 
         //highlight name text while searching
-        if (name.contains(searchString) && !(searchString.isEmpty())) {
-            int startPos = name.indexOf(searchString);
+        if (domain.contains(searchString) && !(searchString.isEmpty())) {
+            int startPos = domain.indexOf(searchString);
             int endPos = startPos + searchString.length();
 
             Spannable spanString = Spannable.Factory.getInstance().
-                    newSpannable(holder.nameTxt.getText());
+                    newSpannable(holder.mdomainTxt.getText());
             spanString.setSpan(new ForegroundColorSpan(Color.RED), startPos, endPos,
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-            holder.nameTxt.setText(spanString);
+            holder.mdomainTxt.setText(spanString);
         } else {
             //Utils.show(ctx, "Search string empty");
         }
 
         //open detailactivity when clicked
-        holder.setItemClickListener(pos -> Utils.sendScientistToActivity(c, s,
+        holder.setItemClickListener(pos -> Utils.sendWineToActivity(c, s,
                 DetailActivity.class));
     }
 
     @Override
     public int getItemCount() {
-        return scientists.size();
+        return wines.size();
     }
 
 }
