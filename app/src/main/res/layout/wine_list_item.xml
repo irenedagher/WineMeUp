@@ -30,15 +30,14 @@
             android:id="@+id/mPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/€"
-            android:
+            android:layout_toLeftOf="@+id/euro"
             android:padding="2dp"
             android:text="Price"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/€"
+            android:id="@+id/euro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"

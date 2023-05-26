@@ -85,18 +85,14 @@ public class WineInfoPageActivity extends AppCompatActivity  implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater().inflate());
         setContentView(R.layout.activity_wines);
         rv.setHasFixedSize(true); //I added that might create a layout bug.
         setContentView(binding.getRoot());
 
         initializeViews();
         bindData();
-        binding.getImage.setOnClickListener(new View.OnClickListener() {
 
-                                            }
-
-        );
+    
     }
 
 }

@@ -22,6 +22,7 @@ import java.util.Random;
 
 import static com.example.winemeup.Utils.searchString;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.storage.FirebaseStorage;
 
 public class  WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
@@ -84,8 +85,8 @@ public class  WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
         holder.mDish.setText(s.getNameDish());
         holder.mdomainTxt.setText(s.getDomain());
         holder.mPrice.setText(s.getPrice());
-        holder.mImageWine.setImageDrawable();
         String imageUrl = "gs://wine-me-up.appspot.com/"+s.getImage()+".jpg";
+        Glide.with(c).load(imageUrl).into(holder.mImageWine);
 
 
         if(position % 2 == 0){

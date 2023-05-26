@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openSignInpage() {
-        Intent intent=new Intent(this,WineListActivity.class);
+        Intent intent=new Intent(this,WineInfoPageActivity.class);
         startActivity(intent);
     }
 }
