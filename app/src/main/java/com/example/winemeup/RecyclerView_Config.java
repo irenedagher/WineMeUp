@@ -45,16 +45,17 @@ public class RecyclerView_Config {
             mCountry = (TextView) itemView.findViewById(R.id.country_txtView);
             mDescription = (TextView) itemView.findViewById(R.id.description_txtView);
             mNameDish = (TextView) itemView.findViewById(R.id.nameDish_txtView);
-            mDomain = (TextView) itemView.findViewById(R.id.domain_txtView);
+            /*mDomain = (TextView) itemView.findViewById(R.id.domain_txtView);
             mPrice = (TextView) itemView.findViewById(R.id.price_txtView);
             mRegion = (TextView) itemView.findViewById(R.id.region_txtView);
-            mYear = (TextView) itemView.findViewById(R.id)
+            mYear = (TextView) itemView.findViewById(R.id)*/
             //Missing PART !
         }
         public void bind(Wine wine, String key){
             mColour.setText(wine.getColour());
             mDescription.setText(wine.getDescription());
             mCountry.setText(wine.getCountry());
+            mNameDish.setText(wine.getNameDish());
             this.key = key;
         }
     }
