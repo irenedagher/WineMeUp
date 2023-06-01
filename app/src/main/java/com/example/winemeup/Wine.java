@@ -16,8 +16,9 @@ public class Wine implements  Serializable{
    private int price;
    private String region;
    private int year;
+   private String key;
 
-   public Wine(String colour, String country, String description, String nameDish, String imageDish, String domain, String image, int price, String region, int year) {
+   public Wine(String colour, String country, String description, String nameDish, String imageDish, String domain, String image, int price, String region, int year,String key) {
       if (domain.trim().equals("")){
          domain = "Wine NoDomain";
       }
@@ -44,6 +45,14 @@ public class Wine implements  Serializable{
 
    public void setColour(String colour) {
       this.colour = colour;
+   }
+
+   public String getKey() {
+      return key;
+   }
+
+   public void setKey(String key) {
+      this.key = key;
    }
 
    public String getCountry() {

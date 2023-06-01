@@ -108,7 +108,7 @@ public class  WineAdapter extends RecyclerView.Adapter<WineAdapter.ViewHolder>{
 
             holder.mdomainTxt.setText(spanString);
         } else {
-            //Utils.show(ctx, "Search string empty");
+            Utils.show(c, "Search string empty");
         }
 
         //open detailactivity when clicked

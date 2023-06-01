@@ -21,6 +21,7 @@ import java.util.List;
 
 public class Utils {
 
+    //public static final String DATE_FORMAT = "yyyy-MM-dd";
     public static List<Wine> DataCache =new ArrayList<>();
 
     public static String searchString = "";
@@ -38,8 +39,7 @@ public class Utils {
      * This method will allow us send a serialized scientist object  to a specified
      *  activity
      */
-    public static void sendWineToActivity(Context c, Wine wine,
-                                               Class clazz){
+    public static void sendWineToActivity(Context c, Wine wine, Class clazz){
         Intent i=new Intent(c,clazz);
         i.putExtra("WINE_KEY",wine);
         c.startActivity(i);
@@ -69,9 +69,7 @@ public class Utils {
         return FirebaseDatabase.getInstance().getReference();
     }
 
-    public static void search(final AppCompatActivity a, DatabaseReference db,
-                              final ProgressBar pb,
-                              WineAdapter adapter, String searchTerm) {
+    public static void search(final AppCompatActivity a, DatabaseReference db, final ProgressBar pb, WineAdapter adapter, String searchTerm) {
         if(searchTerm != null && searchTerm.length()>0){
             char[] letters=searchTerm.toCharArray();
             String firstLetter = String.valueOf(letters[0]).toUpperCase();
@@ -81,8 +79,7 @@ public class Utils {
 
         Utils.showProgressBar(pb);
 
-        Query firebaseSearchQuery = db.child("Wines").orderByChild("domain").startAt(searchTerm)
-                .endAt(searchTerm + "uf8ff");
+        Query firebaseSearchQuery = db.child("Wines").orderByChild("domain").startAt(searchTerm).endAt(searchTerm + "\uf8ff");
 
         firebaseSearchQuery.addValueEventListener(new ValueEventListener() {
             @Override
@@ -92,6 +89,7 @@ public class Utils {
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         //Now get Scientist Objects and populate our arraylist.
                         Wine wine = ds.getValue(Wine.class);
+                        wine.setKey(ds.getKey());
                         DataCache.add(wine);
                     }
                     adapter.notifyDataSetChanged();
@@ -110,10 +108,7 @@ public class Utils {
         });
     }
 
-    public static void select(final AppCompatActivity a, DatabaseReference db,
-                              final ProgressBar pb,
-                              final RecyclerView rv,WineAdapter adapter) {
-        Utils.showProgressBar(pb);
+    public static void select(final AppCompatActivity a, DatabaseReference db, final ProgressBar pb, final RecyclerView rv,WineAdapter adapter) {Utils.showProgressBar(pb);
 
         db.child("Wines").addValueEventListener(new ValueEventListener() {
             @Override
@@ -123,6 +118,7 @@ public class Utils {
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         //Now get Scientist Objects and populate our arraylist.
                         Wine wine = ds.getValue(Wine.class);
+                        wine.setKey(ds.getKey());
                         DataCache.add(wine);
                     }
 
